@@ -1,0 +1,64 @@
+:root {
+    --green: rgb(33, 126, 33) ;
+    --padding_par: 20px;
+    --fontweight_h: 700;
+    --fontstyle: "sofia";
+}
+
+p {
+    padding: var(--padding_par);
+    font-family: var(--fontstyle);
+}
+h1, h3 {
+    color: var(--green);
+    font-weight: var(--fontweight_h);
+    transition: all 1.5s ease-in-out;
+}
+
+p:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+h1:hover {
+    background: black;
+    border: 5px var(--green) solid;
+    box-shadow: 5px 10px #888888;
+}
+
+h3:hover {
+    background: black;
+    border: 5px var(--green) solid;
+    box-shadow: 5px 10px #888888;
+}
+
+@keyframes smile {
+    0% {
+        font-weight: 700;
+        background-color: red;
+        left: 100px;
+    }
+    33% {
+        font-weight: 300;
+        background-color: green;
+        left: 200px;
+    }
+    66% {
+        font-weight: 200;
+        background-color: yellow;
+        left: 300px;
+    }
+    100% {
+        font-weight: 400;
+        background-color: purple;
+        left: 400px;
+    }
+}
+.smile {
+    width: fit-content;
+    font-weight: 700;
+    background-color: red;
+    animation: smile 8s infinite;
+
+}
