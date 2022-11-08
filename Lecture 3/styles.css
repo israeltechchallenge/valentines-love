@@ -38,24 +38,29 @@ h3:hover {
         font-weight: 700;
         background-color: red;
         left: 100px;
+        bottom: 100px;
     }
     33% {
         font-weight: 300;
         background-color: green;
         left: 200px;
+        bottom: 0px;
     }
     66% {
         font-weight: 200;
         background-color: yellow;
         left: 300px;
+        bottom: 400px;
     }
     100% {
         font-weight: 400;
         background-color: purple;
         left: 400px;
+        bottom: 0px;
     }
 }
 .smile {
+    position: relative;
     width: fit-content;
     font-weight: 700;
     background-color: red;
